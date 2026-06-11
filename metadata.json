@@ -1,0 +1,6 @@
+{
+  "name": "Meu Tempo Centro Estético",
+  "description": "Una página web premium, moderna y elegante para el centro de estética y bienestar MEU TEMPO.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

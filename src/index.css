@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #F8B7C8;
+  --color-brand-pink-light: #FFF9FA;
+  --color-brand-pink-dark: #D499A7;
+  --color-brand-gold: #D4AF37;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/40 backdrop-blur-xl border border-white/60 shadow-lg;
+  }
+  .glass-card {
+    @apply bg-white/40 backdrop-blur-xl border border-white/60 shadow-sm hover:shadow-xl transition-all duration-500 rounded-[40px];
+  }
+  .glass-card-pink {
+    @apply bg-brand-pink/10 backdrop-blur-xl border border-white/60 shadow-sm hover:shadow-xl transition-all duration-500 rounded-[40px];
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-gold to-brand-pink-dark;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-[#4A4A4A] font-sans antialiased bg-[#FFF9FA] selection:bg-[#F8B7C8] selection:text-white;
+}
